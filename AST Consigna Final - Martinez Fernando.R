@@ -48,13 +48,13 @@
   library(timetk)
   library(keras)
   library(dplyr)
-  library(Metrics)
 
 # Limpio la memoria
 rm( list=ls() )
 gc()
 
 # Cargo el Dataset. El mismo corresponde al precio mensual en USD de distintos commodities (oro, plata y petróleo) desde 1980 a 2020
+# Link Dataset: https://www.imf.org/en/Research/commodity-prices
 base <- read_xlsx(file.choose())
 head(base)
 tail(base)
